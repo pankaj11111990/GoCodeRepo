@@ -1,0 +1,78 @@
+
+SQL*Loader: Release 11.2.0.1.0 - Production on Sun Sep 20 08:05:17 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   Loader_control_file.ctl
+Data File:      Amazon_csv_file.txt
+  Bad File:     Amazon_csv_file.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table ALL_CSV_RECORDS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ITEM                                FIRST     *   ,  O(") CHARACTER            
+ATTRIBUTE_NAME                       NEXT     *   ,  O(") CHARACTER            
+ATTRIBUTE_VALUE                      NEXT     *   ,  O(") CHARACTER            
+INSERT_AT                                                 CONSTANT
+    Value is 'timestamp'
+
+Record 1: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 2: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 3: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 4: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 5: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 6: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 7: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 8: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+Record 9: Rejected - Error on table ALL_CSV_RECORDS, column INSERT_AT.
+ORA-01722: invalid number
+
+
+Table ALL_CSV_RECORDS:
+  0 Rows successfully loaded.
+  9 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  50176 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             9
+Total logical records rejected:         9
+Total logical records discarded:        0
+
+Run began on Sun Sep 20 08:05:17 2015
+Run ended on Sun Sep 20 08:05:17 2015
+
+Elapsed time was:     00:00:00.53
+CPU time was:         00:00:00.08
